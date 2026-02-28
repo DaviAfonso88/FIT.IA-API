@@ -4,7 +4,11 @@ import { ZodTypeProvider } from "fastify-type-provider-zod";
 
 import { NotFoundError } from "../errors/index.js";
 import { auth } from "../lib/auth.js";
-import { ErrorSchema, StatsQuerySchema, StatsSchema } from "../schemas/index.js";
+import {
+  ErrorSchema,
+  StatsQuerySchema,
+  StatsSchema,
+} from "../schemas/index.js";
 import { GetStats } from "../usecases/GetStats.js";
 
 export const statsRoutes = async (app: FastifyInstance) => {
@@ -12,6 +16,7 @@ export const statsRoutes = async (app: FastifyInstance) => {
     method: "GET",
     url: "/",
     schema: {
+      operationId: "getStats",
       tags: ["Stats"],
       summary: "Get user workout stats",
       querystring: StatsQuerySchema,
