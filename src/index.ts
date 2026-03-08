@@ -68,8 +68,8 @@ await app.register(fastifyApiReference, {
   configuration: {
     sources: [
       {
-        title: "Bootcamp Treinos API",
-        slug: "bootcamp-treinos-api",
+        title: "Treinos API",
+        slug: "treinos-api",
         url: "/swagger.json",
       },
       {
