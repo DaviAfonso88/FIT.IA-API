@@ -1,4 +1,4 @@
-# Treinos API
+# FIT.AI API
 
 API RESTful para gestão de planos de treino personalizados com assistente de IA. Desenvolvida para o projeto Bootcamp Treinos do FSC.
 
